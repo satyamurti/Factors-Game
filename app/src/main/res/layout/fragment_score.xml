@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ScoreFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/igHome"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/home"
+            app:layout_constraintEnd_toEndOf="@+id/scorecard3"
+            app:layout_constraintStart_toStartOf="@+id/scorecard3"
+            app:layout_constraintTop_toBottomOf="@+id/scorecard3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="22dp"
+            android:fontFamily="@font/productbold"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="@+id/igHome"
+            app:layout_constraintStart_toStartOf="@+id/igHome"
+            app:layout_constraintTop_toBottomOf="@+id/igHome" />
+
+        <TextView
+            android:id="@+id/scorecard"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/productbold"
+            android:gravity="center"
+            android:textColor="#FF9800"
+            android:textSize="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scorecard2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="76dp"
+            android:fontFamily="@font/productbold"
+            android:gravity="center"
+            android:textColor="#2196F3"
+            android:textSize="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/scorecard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/scorecard3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/productbold"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textSize="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scorecard" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

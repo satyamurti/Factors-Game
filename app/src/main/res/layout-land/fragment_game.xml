@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/customlottieview"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="60dp"
+            android:padding="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true" />
+
+        <TextView
+            android:id="@+id/Question"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/productbold"
+            android:gravity="center"
+            android:textColor="#3F51B5"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="@+id/option1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/option1"
+            app:layout_constraintTop_toBottomOf="@+id/result" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/productbold"
+            android:gravity="center"
+            android:textColor="#FF5722"
+            android:textSize="36dp"
+            app:layout_constraintEnd_toEndOf="@+id/Question"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Question"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/yellow"
+            android:fontFamily="@font/productbold"
+            android:gravity="center"
+            android:text="Enter Number"
+            android:textColor="#000"
+            android:textSize="32dp"
+            app:layout_constraintStart_toEndOf="@+id/customlottieview"
+            app:layout_constraintTop_toBottomOf="@+id/Question" />
+
+        <TextView
+            android:id="@+id/option3"
+            android:background="@color/yellow"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/productbold"
+            android:text="Enter Number"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/option2"
+            app:layout_constraintStart_toStartOf="@+id/option2"
+            app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/yellow"
+            android:fontFamily="@font/productbold"
+            android:gravity="center"
+            android:text="Enter Number"
+            android:textColor="#000"
+            android:textSize="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/option1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/option1"
+            app:layout_constraintTop_toBottomOf="@+id/option1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
